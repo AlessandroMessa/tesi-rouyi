@@ -1,4 +1,4 @@
-package com.ruoyi.system.service.iam.impl;
+package com.ruoyi.system.service.iam.user.impl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,8 +29,8 @@ import com.ruoyi.system.mapper.SysUserMapper;
 import com.ruoyi.system.mapper.SysUserPostMapper;
 import com.ruoyi.system.mapper.SysUserRoleMapper;
 import com.ruoyi.system.service.directory.ISysConfigService;
-import com.ruoyi.system.service.iam.ISysDeptService;
-import com.ruoyi.system.service.iam.ISysUserService;
+import com.ruoyi.system.service.iam.dept.ISysDeptService;
+import com.ruoyi.system.service.iam.user.ISysUserService;
 
 /**
  * 用户 业务层处理

@@ -1,4 +1,4 @@
-package com.ruoyi.system.service.iam;
+package com.ruoyi.system.service.iam.user;
 
 import java.util.Set;
 

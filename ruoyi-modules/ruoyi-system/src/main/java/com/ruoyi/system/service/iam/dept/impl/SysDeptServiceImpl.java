@@ -1,4 +1,4 @@
-package com.ruoyi.system.service.iam.impl;
+package com.ruoyi.system.service.iam.dept.impl;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -20,7 +20,7 @@ import com.ruoyi.system.api.domain.SysUser;
 import com.ruoyi.system.domain.vo.TreeSelect;
 import com.ruoyi.system.mapper.SysDeptMapper;
 import com.ruoyi.system.mapper.SysRoleMapper;
-import com.ruoyi.system.service.iam.ISysDeptService;
+import com.ruoyi.system.service.iam.dept.ISysDeptService;
 
 /**
  * 部门管理 服务实现

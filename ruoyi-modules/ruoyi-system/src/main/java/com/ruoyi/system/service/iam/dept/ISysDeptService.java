@@ -1,4 +1,4 @@
-package com.ruoyi.system.service.iam;
+package com.ruoyi.system.service.iam.dept;
 
 import java.util.List;
 import com.ruoyi.system.api.domain.SysDept;

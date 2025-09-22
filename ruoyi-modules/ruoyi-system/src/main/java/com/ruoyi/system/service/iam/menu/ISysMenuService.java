@@ -1,4 +1,4 @@
-package com.ruoyi.system.service.iam;
+package com.ruoyi.system.service.iam.menu;
 
 import java.util.List;
 import java.util.Set;

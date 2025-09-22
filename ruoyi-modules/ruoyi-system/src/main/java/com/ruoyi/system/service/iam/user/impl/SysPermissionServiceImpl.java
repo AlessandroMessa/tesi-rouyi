@@ -1,4 +1,4 @@
-package com.ruoyi.system.service.iam.impl;
+package com.ruoyi.system.service.iam.user.impl;
 
 import java.util.HashSet;
 import java.util.List;
@@ -10,9 +10,9 @@ import com.ruoyi.common.core.constant.UserConstants;
 import com.ruoyi.common.core.utils.StringUtils;
 import com.ruoyi.system.api.domain.SysRole;
 import com.ruoyi.system.api.domain.SysUser;
-import com.ruoyi.system.service.iam.ISysMenuService;
-import com.ruoyi.system.service.iam.ISysPermissionService;
-import com.ruoyi.system.service.iam.ISysRoleService;
+import com.ruoyi.system.service.iam.menu.ISysMenuService;
+import com.ruoyi.system.service.iam.user.ISysPermissionService;
+import com.ruoyi.system.service.iam.user.ISysRoleService;
 
 /**
  * 用户权限处理

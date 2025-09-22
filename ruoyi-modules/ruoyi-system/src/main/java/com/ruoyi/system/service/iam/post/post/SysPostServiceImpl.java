@@ -1,4 +1,4 @@
-package com.ruoyi.system.service.iam.impl;
+package com.ruoyi.system.service.iam.post.post;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +9,7 @@ import com.ruoyi.common.core.utils.StringUtils;
 import com.ruoyi.system.domain.SysPost;
 import com.ruoyi.system.mapper.SysPostMapper;
 import com.ruoyi.system.mapper.SysUserPostMapper;
-import com.ruoyi.system.service.iam.ISysPostService;
+import com.ruoyi.system.service.iam.post.ISysPostService;
 
 /**
  * 岗位信息 服务层处理

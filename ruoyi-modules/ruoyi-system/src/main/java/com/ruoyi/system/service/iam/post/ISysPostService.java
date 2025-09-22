@@ -1,4 +1,4 @@
-package com.ruoyi.system.service.iam;
+package com.ruoyi.system.service.iam.post;
 
 import java.util.List;
 import com.ruoyi.system.domain.SysPost;

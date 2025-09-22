@@ -1,4 +1,4 @@
-package com.ruoyi.system.service.iam;
+package com.ruoyi.system.service.iam.user;
 
 import com.ruoyi.system.api.model.LoginUser;
 import com.ruoyi.system.domain.SysUserOnline;
