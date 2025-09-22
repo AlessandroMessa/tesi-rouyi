@@ -1,4 +1,4 @@
-package com.ruoyi.system.directory.adapter;
+package com.ruoyi.system.directory.adapter.config;
 
 import com.ruoyi.common.redis.service.RedisService;
 import com.ruoyi.system.directory.port.ConfigPort;

@@ -1,4 +1,4 @@
-package com.ruoyi.system.directory.adapter;
+package com.ruoyi.system.directory.adapter.utils;
 
 import java.util.List;
 
