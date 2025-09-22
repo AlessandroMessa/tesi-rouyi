@@ -1,4 +1,4 @@
-package com.ruoyi.system.service.iam.port;
+package com.ruoyi.system.security.port;
 
 public interface  SecurityPort {
 
