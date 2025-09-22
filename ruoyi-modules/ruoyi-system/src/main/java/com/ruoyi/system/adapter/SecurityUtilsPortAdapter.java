@@ -1,4 +1,4 @@
-package com.ruoyi.system.security.adapter;
+package com.ruoyi.system.adapter;
 
 import com.ruoyi.common.security.utils.SecurityUtils;
 import com.ruoyi.system.api.domain.SysUser;
