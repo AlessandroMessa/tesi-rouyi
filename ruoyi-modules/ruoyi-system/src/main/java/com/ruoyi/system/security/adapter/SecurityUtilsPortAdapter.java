@@ -1,9 +1,11 @@
-package com.ruoyi.system.iam.adapter;
+package com.ruoyi.system.security.adapter;
 
 import com.ruoyi.common.security.utils.SecurityUtils;
 import com.ruoyi.system.api.domain.SysUser;
-import com.ruoyi.system.iam.port.SecurityPort;
+import com.ruoyi.system.security.port.SecurityPort;
+import org.springframework.stereotype.Component;
 
+@Component
 public class SecurityUtilsPortAdapter implements SecurityPort {
     @Override
     public Long getCurrentUserId() {

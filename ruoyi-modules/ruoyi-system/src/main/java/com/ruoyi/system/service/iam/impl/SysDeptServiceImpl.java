@@ -5,8 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.ruoyi.system.iam.adapter.SecurityUtilsPortAdapter;
-import com.ruoyi.system.iam.port.SecurityPort;
+import com.ruoyi.system.security.port.SecurityPort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.ruoyi.common.core.constant.UserConstants;
