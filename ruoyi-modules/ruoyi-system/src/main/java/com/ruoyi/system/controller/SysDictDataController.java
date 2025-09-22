@@ -23,8 +23,8 @@ import com.ruoyi.common.log.enums.BusinessType;
 import com.ruoyi.common.security.annotation.RequiresPermissions;
 import com.ruoyi.common.security.utils.SecurityUtils;
 import com.ruoyi.system.api.domain.SysDictData;
-import com.ruoyi.system.service.ISysDictDataService;
-import com.ruoyi.system.service.ISysDictTypeService;
+import com.ruoyi.system.service.directory.ISysDictDataService;
+import com.ruoyi.system.service.directory.ISysDictTypeService;
 
 /**
  * 数据字典信息

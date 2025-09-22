@@ -36,12 +36,12 @@ import com.ruoyi.system.api.domain.SysDept;
 import com.ruoyi.system.api.domain.SysRole;
 import com.ruoyi.system.api.domain.SysUser;
 import com.ruoyi.system.api.model.LoginUser;
-import com.ruoyi.system.service.ISysConfigService;
-import com.ruoyi.system.service.ISysDeptService;
-import com.ruoyi.system.service.ISysPermissionService;
-import com.ruoyi.system.service.ISysPostService;
-import com.ruoyi.system.service.ISysRoleService;
-import com.ruoyi.system.service.ISysUserService;
+import com.ruoyi.system.service.directory.ISysConfigService;
+import com.ruoyi.system.service.iam.ISysDeptService;
+import com.ruoyi.system.service.iam.ISysPermissionService;
+import com.ruoyi.system.service.iam.ISysPostService;
+import com.ruoyi.system.service.iam.ISysRoleService;
+import com.ruoyi.system.service.iam.ISysUserService;
 
 /**
  * 用户信息

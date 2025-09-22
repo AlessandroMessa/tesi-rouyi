@@ -21,7 +21,7 @@ import com.ruoyi.common.log.enums.BusinessType;
 import com.ruoyi.common.security.annotation.RequiresPermissions;
 import com.ruoyi.common.security.utils.SecurityUtils;
 import com.ruoyi.system.domain.SysConfig;
-import com.ruoyi.system.service.ISysConfigService;
+import com.ruoyi.system.service.directory.ISysConfigService;
 
 /**
  * 参数配置 信息操作处理

@@ -24,9 +24,9 @@ import com.ruoyi.system.api.domain.SysDept;
 import com.ruoyi.system.api.domain.SysRole;
 import com.ruoyi.system.api.domain.SysUser;
 import com.ruoyi.system.domain.SysUserRole;
-import com.ruoyi.system.service.ISysDeptService;
-import com.ruoyi.system.service.ISysRoleService;
-import com.ruoyi.system.service.ISysUserService;
+import com.ruoyi.system.service.iam.ISysDeptService;
+import com.ruoyi.system.service.iam.ISysRoleService;
+import com.ruoyi.system.service.iam.ISysUserService;
 
 /**
  * 角色信息
