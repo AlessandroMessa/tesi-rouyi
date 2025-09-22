@@ -1,6 +1,8 @@
-package com.ruoyi.system.service.directory.cache;
+package com.ruoyi.system.adapter;
 
 import java.util.Collection;
+
+import com.ruoyi.system.service.directory.cache.ConfigCache;
 import org.springframework.stereotype.Component;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.ruoyi.common.redis.service.RedisService;
