@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import com.ruoyi.system.iam.adapter.SecurityUtilsPortAdapter;
+import com.ruoyi.system.iam.port.SecurityPort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.ruoyi.common.core.constant.UserConstants;
@@ -12,7 +15,6 @@ import com.ruoyi.common.core.text.Convert;
 import com.ruoyi.common.core.utils.SpringUtils;
 import com.ruoyi.common.core.utils.StringUtils;
 import com.ruoyi.common.datascope.annotation.DataScope;
-import com.ruoyi.common.security.utils.SecurityUtils;
 import com.ruoyi.system.api.domain.SysDept;
 import com.ruoyi.system.api.domain.SysRole;
 import com.ruoyi.system.api.domain.SysUser;
@@ -34,6 +36,8 @@ public class SysDeptServiceImpl implements ISysDeptService
 
     @Autowired
     private SysRoleMapper roleMapper;
+    @Autowired
+    private SecurityPort securityPort;
 
     /**
      * 查询部门管理数据
@@ -190,7 +194,7 @@ public class SysDeptServiceImpl implements ISysDeptService
     @Override
     public void checkDeptDataScope(Long deptId)
     {
-        if (!SysUser.isAdmin(SecurityUtils.getUserId()) && StringUtils.isNotNull(deptId))
+        if (!SysUser.isAdmin(securityPort.getCurrentUserId()) && StringUtils.isNotNull(deptId))
         {
             SysDept dept = new SysDept();
             dept.setDeptId(deptId);
