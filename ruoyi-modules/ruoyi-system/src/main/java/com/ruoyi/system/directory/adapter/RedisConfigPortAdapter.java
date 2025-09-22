@@ -1,19 +1,19 @@
-package com.ruoyi.system.adapter;
+package com.ruoyi.system.directory.adapter;
+
+import com.ruoyi.common.redis.service.RedisService;
+import com.ruoyi.system.directory.port.ConfigPort;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.Collection;
 
-import com.ruoyi.system.service.directory.cache.ConfigCache;
-import org.springframework.stereotype.Component;
-import org.springframework.beans.factory.annotation.Autowired;
-import com.ruoyi.common.redis.service.RedisService;
-
 @Component
-public class RedisConfigCacheAdapter implements ConfigCache {
+public class RedisConfigPortAdapter implements ConfigPort {
 
     private final RedisService redis;
 
     @Autowired
-    public RedisConfigCacheAdapter(RedisService redis) {
+    public RedisConfigPortAdapter(RedisService redis) {
         this.redis = redis;
     }
 

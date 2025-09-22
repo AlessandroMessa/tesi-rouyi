@@ -1,10 +1,9 @@
 package com.ruoyi.system.service.directory.impl;
 
-import java.util.Collection;
 import java.util.List;
 import javax.annotation.PostConstruct;
 
-import com.ruoyi.system.service.directory.cache.ConfigCache;
+import com.ruoyi.system.directory.port.ConfigPort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.ruoyi.common.core.constant.CacheConstants;
@@ -28,7 +27,7 @@ public class SysConfigServiceImpl implements ISysConfigService
     private SysConfigMapper configMapper;
 
     @Autowired
-    private ConfigCache configCache;
+    private ConfigPort configCache;
 
     /**
      * 项目启动时，初始化参数到缓存

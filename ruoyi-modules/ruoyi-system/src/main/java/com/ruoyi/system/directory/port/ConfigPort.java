@@ -1,6 +1,6 @@
-package com.ruoyi.system.service.directory.cache;
+package com.ruoyi.system.directory.port;
 
-public interface ConfigCache {
+public interface ConfigPort {
     String get(String key);
     void set(String key, String value);
     void delete(String key);
