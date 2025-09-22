@@ -1,8 +1,7 @@
-package com.ruoyi.system.adapter;
+package com.ruoyi.system.security.adapter;
 
 import com.ruoyi.common.security.utils.SecurityUtils;
-import com.ruoyi.system.api.domain.SysUser;
-import com.ruoyi.system.security.port.SecurityPort;
+import com.ruoyi.system.service.iam.port.SecurityPort;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -20,7 +19,7 @@ public class SecurityUtilsPortAdapter implements SecurityPort {
 
     @Override
     public boolean isAdmin(Long userId) {
-        return SysUser.isAdmin(userId);
+        return SecurityUtils.isAdmin(userId);
     }
 
     @Override

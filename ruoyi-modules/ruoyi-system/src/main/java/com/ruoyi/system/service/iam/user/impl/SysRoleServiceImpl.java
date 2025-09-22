@@ -6,7 +6,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import com.ruoyi.system.security.port.SecurityPort;
+import com.ruoyi.system.service.iam.port.SecurityPort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -16,7 +16,6 @@ import com.ruoyi.common.core.utils.SpringUtils;
 import com.ruoyi.common.core.utils.StringUtils;
 import com.ruoyi.common.datascope.annotation.DataScope;
 import com.ruoyi.system.api.domain.SysRole;
-import com.ruoyi.system.api.domain.SysUser;
 import com.ruoyi.system.domain.SysRoleDept;
 import com.ruoyi.system.domain.SysRoleMenu;
 import com.ruoyi.system.domain.SysUserRole;
@@ -200,7 +199,7 @@ public class SysRoleServiceImpl implements ISysRoleService
     @Override
     public void checkRoleDataScope(Long... roleIds)
     {
-        if (!SysUser.isAdmin(securityPort.getCurrentUserId()))
+        if (securityPort.isCurrentUserAdmin())
         {
             for (Long roleId : roleIds)
             {
