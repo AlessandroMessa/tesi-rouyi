@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 
 import com.ruoyi.system.application.adapter.TreeSelectFactory;
 import com.ruoyi.system.service.iam.port.DataScopePort;
+import com.ruoyi.system.service.iam.port.RolePort;
 import com.ruoyi.system.service.iam.port.SecurityPort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,8 +17,6 @@ import com.ruoyi.common.core.text.Convert;
 import com.ruoyi.common.core.utils.SpringUtils;
 import com.ruoyi.common.core.utils.StringUtils;
 import com.ruoyi.system.api.domain.SysDept;
-import com.ruoyi.system.api.domain.SysRole;
-import com.ruoyi.system.api.domain.SysUser;
 import com.ruoyi.system.domain.vo.TreeSelect;
 import com.ruoyi.system.mapper.SysDeptMapper;
 import com.ruoyi.system.mapper.SysRoleMapper;
@@ -40,6 +39,7 @@ public class SysDeptServiceImpl implements ISysDeptService
     private SecurityPort securityPort;
     @Autowired
     private DataScopePort dataScopePort;
+    @Autowired private RolePort rolePort;
 
     /**
      * 查询部门管理数据
@@ -116,8 +116,8 @@ public class SysDeptServiceImpl implements ISysDeptService
     @Override
     public List<Long> selectDeptListByRoleId(Long roleId)
     {
-        SysRole role = roleMapper.selectRoleById(roleId);
-        return deptMapper.selectDeptListByRoleId(roleId, role.isDeptCheckStrictly());
+        boolean strictly = rolePort.isDeptCheckStrictly(roleId);
+        return deptMapper.selectDeptListByRoleId(roleId, strictly);
     }
 
     /**
@@ -196,7 +196,7 @@ public class SysDeptServiceImpl implements ISysDeptService
     @Override
     public void checkDeptDataScope(Long deptId)
     {
-        if (!SysUser.isAdmin(securityPort.getCurrentUserId()) && StringUtils.isNotNull(deptId))
+        if (!securityPort.isAdmin(securityPort.getCurrentUserId()) && StringUtils.isNotNull(deptId))
         {
             SysDept dept = new SysDept();
             dept.setDeptId(deptId);
