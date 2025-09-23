@@ -1,7 +1,9 @@
 package com.ruoyi.system.security.adapter;
 
+import com.ruoyi.system.api.domain.SysDept;
 import com.ruoyi.system.api.domain.SysRole;
 import com.ruoyi.system.api.domain.SysUser;
+import com.ruoyi.system.mapper.SysDeptMapper;
 import com.ruoyi.system.mapper.SysRoleMapper;
 import com.ruoyi.system.mapper.SysUserMapper;
 import com.ruoyi.system.service.iam.port.DataScopePort;
@@ -15,10 +17,12 @@ public class DataScopeAdapter implements DataScopePort {
 
     private final SysRoleMapper roleMapper;
     private final SysUserMapper userMapper;
+    private final SysDeptMapper deptMapper;
 
-    public DataScopeAdapter(SysRoleMapper roleMapper, SysUserMapper userMapper) {
+    public DataScopeAdapter(SysRoleMapper roleMapper, SysUserMapper userMapper, SysDeptMapper deptMapper) {
         this.roleMapper = roleMapper;
         this.userMapper = userMapper;
+        this.deptMapper = deptMapper;
     }
 
     @Override
@@ -42,5 +46,10 @@ public class DataScopeAdapter implements DataScopePort {
     @DataScope(deptAlias = "d", userAlias = "u")
     public List<SysUser> selectUnallocatedListWithScope(SysUser user) {
         return userMapper.selectUnallocatedList(user);
+    }
+    @Override
+    @DataScope(deptAlias = "d")
+    public List<SysDept> selectDeptListWithScope(SysDept dept){
+        return deptMapper.selectDeptList(dept);
     }
 }

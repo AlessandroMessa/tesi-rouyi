@@ -5,6 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import com.ruoyi.system.service.iam.port.DataScopePort;
 import com.ruoyi.system.service.iam.port.SecurityPort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -37,6 +38,8 @@ public class SysDeptServiceImpl implements ISysDeptService
     private SysRoleMapper roleMapper;
     @Autowired
     private SecurityPort securityPort;
+    @Autowired
+    private DataScopePort dataScopePort;
 
     /**
      * 查询部门管理数据
@@ -45,10 +48,9 @@ public class SysDeptServiceImpl implements ISysDeptService
      * @return 部门信息集合
      */
     @Override
-    @DataScope(deptAlias = "d")
     public List<SysDept> selectDeptList(SysDept dept)
     {
-        return deptMapper.selectDeptList(dept);
+        return dataScopePort.selectDeptListWithScope(dept);
     }
 
     /**
