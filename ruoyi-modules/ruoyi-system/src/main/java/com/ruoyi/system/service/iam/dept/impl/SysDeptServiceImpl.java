@@ -5,6 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import com.ruoyi.system.application.adapter.TreeSelectFactory;
 import com.ruoyi.system.service.iam.port.DataScopePort;
 import com.ruoyi.system.service.iam.port.SecurityPort;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +15,6 @@ import com.ruoyi.common.core.exception.ServiceException;
 import com.ruoyi.common.core.text.Convert;
 import com.ruoyi.common.core.utils.SpringUtils;
 import com.ruoyi.common.core.utils.StringUtils;
-import com.ruoyi.common.datascope.annotation.DataScope;
 import com.ruoyi.system.api.domain.SysDept;
 import com.ruoyi.system.api.domain.SysRole;
 import com.ruoyi.system.api.domain.SysUser;
@@ -100,10 +100,11 @@ public class SysDeptServiceImpl implements ISysDeptService
      * @return 下拉树结构列表
      */
     @Override
-    public List<TreeSelect> buildDeptTreeSelect(List<SysDept> depts)
-    {
+    public List<TreeSelect> buildDeptTreeSelect(List<SysDept> depts) {
         List<SysDept> deptTrees = buildDeptTree(depts);
-        return deptTrees.stream().map(TreeSelect::new).collect(Collectors.toList());
+        return deptTrees.stream()
+                .map(TreeSelectFactory::fromSysDept)
+                .collect(Collectors.toList());
     }
 
     /**

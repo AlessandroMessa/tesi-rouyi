@@ -2,20 +2,16 @@ package com.ruoyi.system.domain.vo;
 
 import java.io.Serializable;
 import java.util.List;
-import java.util.stream.Collectors;
+
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.ruoyi.common.core.constant.UserConstants;
-import com.ruoyi.common.core.utils.StringUtils;
-import com.ruoyi.system.api.domain.SysDept;
 import com.ruoyi.system.domain.SysMenu;
 
 /**
  * Treeselect树结构实体类
- * 
+ *
  * @author ruoyi
  */
-public class TreeSelect implements Serializable
-{
+public class TreeSelect implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /** 节点ID */
@@ -31,63 +27,25 @@ public class TreeSelect implements Serializable
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
     private List<TreeSelect> children;
 
-    public TreeSelect()
-    {
+    public TreeSelect() { }
 
-    }
-
-    public TreeSelect(SysDept dept)
-    {
-        this.id = dept.getDeptId();
-        this.label = dept.getDeptName();
-        this.disabled = StringUtils.equals(UserConstants.DEPT_DISABLE, dept.getStatus());
-        this.children = dept.getChildren().stream().map(TreeSelect::new).collect(Collectors.toList());
-    }
-
-    public TreeSelect(SysMenu menu)
-    {
+    // Costruttore dal domain interno (SysMenu è in system.domain, quindi va bene)
+    public TreeSelect(SysMenu menu) {
         this.id = menu.getMenuId();
         this.label = menu.getMenuName();
-        this.children = menu.getChildren().stream().map(TreeSelect::new).collect(Collectors.toList());
+        this.children = menu.getChildren().stream().map(TreeSelect::new).toList();
     }
 
-    public Long getId()
-    {
-        return id;
-    }
+    // Getter & Setter
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
 
-    public void setId(Long id)
-    {
-        this.id = id;
-    }
+    public String getLabel() { return label; }
+    public void setLabel(String label) { this.label = label; }
 
-    public String getLabel()
-    {
-        return label;
-    }
+    public boolean isDisabled() { return disabled; }
+    public void setDisabled(boolean disabled) { this.disabled = disabled; }
 
-    public void setLabel(String label)
-    {
-        this.label = label;
-    }
-
-    public boolean isDisabled()
-    {
-        return disabled;
-    }
-
-    public void setDisabled(boolean disabled)
-    {
-        this.disabled = disabled;
-    }
-
-    public List<TreeSelect> getChildren()
-    {
-        return children;
-    }
-
-    public void setChildren(List<TreeSelect> children)
-    {
-        this.children = children;
-    }
+    public List<TreeSelect> getChildren() { return children; }
+    public void setChildren(List<TreeSelect> children) { this.children = children; }
 }
