@@ -15,7 +15,6 @@ import com.ruoyi.common.core.constant.UserConstants;
 import com.ruoyi.common.core.exception.ServiceException;
 import com.ruoyi.common.core.utils.SpringUtils;
 import com.ruoyi.common.core.utils.StringUtils;
-import com.ruoyi.common.datascope.annotation.DataScope;
 import com.ruoyi.system.api.domain.SysRole;
 import com.ruoyi.system.domain.SysRoleDept;
 import com.ruoyi.system.domain.SysRoleMenu;

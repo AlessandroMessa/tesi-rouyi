@@ -5,7 +5,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 import javax.validation.Validator;
 
-import com.ruoyi.system.security.port.SecurityPort;
+import com.ruoyi.system.service.iam.port.DataScopePort;
+import com.ruoyi.system.service.iam.port.SecurityPort;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +18,6 @@ import com.ruoyi.common.core.exception.ServiceException;
 import com.ruoyi.common.core.utils.SpringUtils;
 import com.ruoyi.common.core.utils.StringUtils;
 import com.ruoyi.common.core.utils.bean.BeanValidators;
-import com.ruoyi.common.datascope.annotation.DataScope;
 import com.ruoyi.system.api.domain.SysRole;
 import com.ruoyi.system.api.domain.SysUser;
 import com.ruoyi.system.domain.SysPost;
@@ -67,6 +67,9 @@ public class SysUserServiceImpl implements ISysUserService
     protected Validator validator;
     @Autowired
     private SecurityPort securityPort;
+    @Autowired
+    private DataScopePort dataScopePort;
+
 
     /**
      * 根据条件分页查询用户列表
@@ -75,10 +78,9 @@ public class SysUserServiceImpl implements ISysUserService
      * @return 用户信息集合信息
      */
     @Override
-    @DataScope(deptAlias = "d", userAlias = "u")
     public List<SysUser> selectUserList(SysUser user)
     {
-        return userMapper.selectUserList(user);
+        return dataScopePort.selectUserListWithScope(user);
     }
 
     /**
@@ -88,10 +90,9 @@ public class SysUserServiceImpl implements ISysUserService
      * @return 用户信息集合信息
      */
     @Override
-    @DataScope(deptAlias = "d", userAlias = "u")
     public List<SysUser> selectAllocatedList(SysUser user)
     {
-        return userMapper.selectAllocatedList(user);
+        return dataScopePort.selectAllocatedListWithScope(user);
     }
 
     /**
@@ -101,10 +102,9 @@ public class SysUserServiceImpl implements ISysUserService
      * @return 用户信息集合信息
      */
     @Override
-    @DataScope(deptAlias = "d", userAlias = "u")
     public List<SysUser> selectUnallocatedList(SysUser user)
     {
-        return userMapper.selectUnallocatedList(user);
+        return dataScopePort.selectUnallocatedListWithScope(user);
     }
 
     /**
