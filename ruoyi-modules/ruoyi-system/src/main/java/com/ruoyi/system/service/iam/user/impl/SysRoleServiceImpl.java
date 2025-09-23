@@ -6,6 +6,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import com.ruoyi.system.service.iam.port.DataScopePort;
 import com.ruoyi.system.service.iam.port.SecurityPort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -46,6 +47,8 @@ public class SysRoleServiceImpl implements ISysRoleService
     private SysRoleDeptMapper roleDeptMapper;
     @Autowired
     private SecurityPort securityPort;
+    @Autowired
+    private DataScopePort dataScopePort;
 
     /**
      * 根据条件分页查询角色数据
@@ -54,10 +57,9 @@ public class SysRoleServiceImpl implements ISysRoleService
      * @return 角色数据集合信息
      */
     @Override
-    @DataScope(deptAlias = "d")
     public List<SysRole> selectRoleList(SysRole role)
     {
-        return roleMapper.selectRoleList(role);
+        return dataScopePort.selectRoleList(role);
     }
 
     /**
