@@ -1,41 +1,27 @@
-package com.ruoyi.system.dept.domain.model;
+package com.ruoyi.system.shared.vo;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import java.io.Serializable;
 import java.util.List;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.ruoyi.system.iam.role.domain.model.SysMenu;
-
-/**
- * Treeselect树结构实体类
- *
- * @author ruoyi
- */
 public class TreeSelect implements Serializable {
     private static final long serialVersionUID = 1L;
 
-    /** 节点ID */
     private Long id;
-
-    /** 节点名称 */
     private String label;
-
-    /** 节点禁用 */
-    private boolean disabled = false;
-
-    /** 子节点 */
+    private boolean disabled;
     @JsonInclude(JsonInclude.Include.NON_EMPTY)
     private List<TreeSelect> children;
 
     public TreeSelect() { }
 
-    public TreeSelect(SysMenu menu) {
-        this.id = menu.getMenuId();
-        this.label = menu.getMenuName();
-        this.children = menu.getChildren().stream().map(TreeSelect::new).toList();
+    public TreeSelect(Long id, String label, boolean disabled, List<TreeSelect> children) {
+        this.id = id;
+        this.label = label;
+        this.disabled = disabled;
+        this.children = children;
     }
 
-    // Getter & Setter
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 

@@ -10,6 +10,8 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 import com.ruoyi.system.common.SecurityPort;
+import com.ruoyi.system.iam.role.factory.MenuTreeSelectFactory;
+import com.ruoyi.system.shared.vo.TreeSelect;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.ruoyi.common.core.constant.Constants;
@@ -20,7 +22,6 @@ import com.ruoyi.system.api.domain.SysUser;
 import com.ruoyi.system.iam.role.domain.model.SysMenu;
 import com.ruoyi.system.iam.role.domain.model.MetaVo;
 import com.ruoyi.system.iam.role.domain.model.RouterVo;
-import com.ruoyi.system.dept.domain.model.TreeSelect;
 import com.ruoyi.system.iam.role.adapter.SysMenuMapper;
 import com.ruoyi.system.iam.role.adapter.SysRoleMapper;
 import com.ruoyi.system.iam.role.adapter.SysRoleMenuMapper;
@@ -252,12 +253,12 @@ public class SysMenuServiceImpl implements ISysMenuService
      * @return 下拉树结构列表
      */
     @Override
-    public List<TreeSelect> buildMenuTreeSelect(List<SysMenu> menus)
-    {
+    public List<TreeSelect> buildMenuTreeSelect(List<SysMenu> menus) {
         List<SysMenu> menuTrees = buildMenuTree(menus);
-        return menuTrees.stream().map(TreeSelect::new).collect(Collectors.toList());
+        return menuTrees.stream()
+                .map(MenuTreeSelectFactory::fromSysMenu)
+                .collect(Collectors.toList()); // Java 8
     }
-
     /**
      * 根据菜单ID查询信息
      * 

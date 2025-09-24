@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Set;
 import com.ruoyi.system.iam.role.domain.model.SysMenu;
 import com.ruoyi.system.iam.role.domain.model.RouterVo;
-import com.ruoyi.system.dept.domain.model.TreeSelect;
+import com.ruoyi.system.shared.vo.TreeSelect;
 
 /**
  * 菜单 业务层
