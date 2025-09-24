@@ -1,7 +1,7 @@
 package com.ruoyi.system.service.iam.post;
 
 import java.util.List;
-import com.ruoyi.system.domain.SysPost;
+import com.ruoyi.system.domain.iam.post.SysPost;
 
 /**
  * 岗位信息 服务层

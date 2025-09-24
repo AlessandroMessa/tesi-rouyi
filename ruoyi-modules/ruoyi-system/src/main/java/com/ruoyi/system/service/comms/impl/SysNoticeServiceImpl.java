@@ -3,8 +3,8 @@ package com.ruoyi.system.service.comms.impl;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.ruoyi.system.domain.SysNotice;
-import com.ruoyi.system.mapper.SysNoticeMapper;
+import com.ruoyi.system.domain.comms.SysNotice;
+import com.ruoyi.system.mapper.comms.SysNoticeMapper;
 import com.ruoyi.system.service.comms.ISysNoticeService;
 
 /**

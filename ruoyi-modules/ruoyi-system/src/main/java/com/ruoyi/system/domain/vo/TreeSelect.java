@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.ruoyi.system.domain.SysMenu;
+import com.ruoyi.system.domain.iam.menu.SysMenu;
 
 /**
  * Treeselect树结构实体类

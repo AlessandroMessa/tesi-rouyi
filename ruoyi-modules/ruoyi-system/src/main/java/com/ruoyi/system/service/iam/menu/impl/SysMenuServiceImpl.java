@@ -17,13 +17,13 @@ import com.ruoyi.common.core.constant.UserConstants;
 import com.ruoyi.common.core.utils.StringUtils;
 import com.ruoyi.system.api.domain.SysRole;
 import com.ruoyi.system.api.domain.SysUser;
-import com.ruoyi.system.domain.SysMenu;
+import com.ruoyi.system.domain.iam.menu.SysMenu;
 import com.ruoyi.system.domain.vo.MetaVo;
 import com.ruoyi.system.domain.vo.RouterVo;
 import com.ruoyi.system.domain.vo.TreeSelect;
-import com.ruoyi.system.mapper.SysMenuMapper;
-import com.ruoyi.system.mapper.SysRoleMapper;
-import com.ruoyi.system.mapper.SysRoleMenuMapper;
+import com.ruoyi.system.mapper.iam.menu.SysMenuMapper;
+import com.ruoyi.system.mapper.iam.user.SysRoleMapper;
+import com.ruoyi.system.mapper.iam.user.SysRoleMenuMapper;
 import com.ruoyi.system.service.iam.menu.ISysMenuService;
 
 /**

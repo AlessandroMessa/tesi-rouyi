@@ -15,8 +15,8 @@ import com.ruoyi.common.core.constant.UserConstants;
 import com.ruoyi.common.core.utils.StringUtils;
 import com.ruoyi.system.api.domain.SysDictData;
 import com.ruoyi.system.api.domain.SysDictType;
-import com.ruoyi.system.mapper.SysDictDataMapper;
-import com.ruoyi.system.mapper.SysDictTypeMapper;
+import com.ruoyi.system.mapper.directory.SysDictDataMapper;
+import com.ruoyi.system.mapper.directory.SysDictTypeMapper;
 import com.ruoyi.system.service.directory.ISysDictTypeService;
 
 /**

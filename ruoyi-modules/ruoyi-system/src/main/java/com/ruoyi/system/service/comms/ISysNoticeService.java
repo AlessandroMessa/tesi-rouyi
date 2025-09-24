@@ -1,7 +1,7 @@
 package com.ruoyi.system.service.comms;
 
 import java.util.List;
-import com.ruoyi.system.domain.SysNotice;
+import com.ruoyi.system.domain.comms.SysNotice;
 
 /**
  * 公告 服务层

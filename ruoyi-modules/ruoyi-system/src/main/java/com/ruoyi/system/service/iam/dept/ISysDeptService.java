@@ -1,7 +1,7 @@
 package com.ruoyi.system.service.iam.dept;
 
 import java.util.List;
-import com.ruoyi.system.domain.model.Dept;
+import com.ruoyi.system.domain.iam.dept.Dept;
 import com.ruoyi.system.domain.vo.TreeSelect;
 
 /**

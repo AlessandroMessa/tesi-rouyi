@@ -16,13 +16,13 @@ import com.ruoyi.common.core.exception.ServiceException;
 import com.ruoyi.common.core.utils.SpringUtils;
 import com.ruoyi.common.core.utils.StringUtils;
 import com.ruoyi.system.api.domain.SysRole;
-import com.ruoyi.system.domain.SysRoleDept;
-import com.ruoyi.system.domain.SysRoleMenu;
-import com.ruoyi.system.domain.SysUserRole;
-import com.ruoyi.system.mapper.SysRoleDeptMapper;
-import com.ruoyi.system.mapper.SysRoleMapper;
-import com.ruoyi.system.mapper.SysRoleMenuMapper;
-import com.ruoyi.system.mapper.SysUserRoleMapper;
+import com.ruoyi.system.domain.iam.user.SysRoleDept;
+import com.ruoyi.system.domain.iam.user.SysRoleMenu;
+import com.ruoyi.system.domain.iam.user.SysUserRole;
+import com.ruoyi.system.mapper.iam.user.SysRoleDeptMapper;
+import com.ruoyi.system.mapper.iam.user.SysRoleMapper;
+import com.ruoyi.system.mapper.iam.user.SysRoleMenuMapper;
+import com.ruoyi.system.mapper.iam.user.SysUserRoleMapper;
 import com.ruoyi.system.service.iam.user.ISysRoleService;
 
 /**

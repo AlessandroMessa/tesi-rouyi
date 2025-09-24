@@ -1,8 +1,8 @@
 package com.ruoyi.system.application.adapter;
 
 import com.ruoyi.system.api.domain.SysDept;
-import com.ruoyi.system.domain.model.Dept;
-import com.ruoyi.system.domain.model.DeptStatus;
+import com.ruoyi.system.domain.iam.dept.Dept;
+import com.ruoyi.system.domain.iam.dept.DeptStatus;
 
 import java.util.List;
 import java.util.stream.Collectors;

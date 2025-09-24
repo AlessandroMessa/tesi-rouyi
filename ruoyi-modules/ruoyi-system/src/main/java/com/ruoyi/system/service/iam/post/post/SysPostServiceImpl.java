@@ -6,9 +6,9 @@ import org.springframework.stereotype.Service;
 import com.ruoyi.common.core.constant.UserConstants;
 import com.ruoyi.common.core.exception.ServiceException;
 import com.ruoyi.common.core.utils.StringUtils;
-import com.ruoyi.system.domain.SysPost;
-import com.ruoyi.system.mapper.SysPostMapper;
-import com.ruoyi.system.mapper.SysUserPostMapper;
+import com.ruoyi.system.domain.iam.post.SysPost;
+import com.ruoyi.system.mapper.iam.post.SysPostMapper;
+import com.ruoyi.system.mapper.iam.user.SysUserPostMapper;
 import com.ruoyi.system.service.iam.post.ISysPostService;
 
 /**

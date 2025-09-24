@@ -2,11 +2,11 @@ package com.ruoyi.system.mapper.adapter;
 
 import com.ruoyi.system.api.domain.SysDept;
 import com.ruoyi.system.application.adapter.SysDeptAdapter;
-import com.ruoyi.system.domain.model.Dept;
+import com.ruoyi.system.domain.iam.dept.Dept;
 import com.ruoyi.system.domain.port.DeptRepository;
 import com.ruoyi.system.domain.port.SecurityPort;
 import com.ruoyi.common.security.utils.SecurityUtils;
-import com.ruoyi.system.mapper.SysDeptMapper;
+import com.ruoyi.system.mapper.dept.SysDeptMapper;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;

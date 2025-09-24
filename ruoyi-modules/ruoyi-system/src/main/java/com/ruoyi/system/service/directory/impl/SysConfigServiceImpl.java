@@ -11,8 +11,8 @@ import com.ruoyi.common.core.constant.UserConstants;
 import com.ruoyi.common.core.exception.ServiceException;
 import com.ruoyi.common.core.text.Convert;
 import com.ruoyi.common.core.utils.StringUtils;
-import com.ruoyi.system.domain.SysConfig;
-import com.ruoyi.system.mapper.SysConfigMapper;
+import com.ruoyi.system.domain.directory.SysConfig;
+import com.ruoyi.system.mapper.directory.SysConfigMapper;
 import com.ruoyi.system.service.directory.ISysConfigService;
 
 /**

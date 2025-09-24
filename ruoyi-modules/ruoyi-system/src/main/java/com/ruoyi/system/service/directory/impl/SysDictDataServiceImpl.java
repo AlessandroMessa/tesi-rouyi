@@ -6,7 +6,7 @@ import com.ruoyi.system.directory.port.DictPort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.ruoyi.system.api.domain.SysDictData;
-import com.ruoyi.system.mapper.SysDictDataMapper;
+import com.ruoyi.system.mapper.directory.SysDictDataMapper;
 import com.ruoyi.system.service.directory.ISysDictDataService;
 
 /**
