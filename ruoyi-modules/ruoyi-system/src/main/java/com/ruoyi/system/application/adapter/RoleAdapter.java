@@ -1,7 +1,7 @@
 package com.ruoyi.system.application.adapter;
 
 import com.ruoyi.system.mapper.SysRoleMapper;
-import com.ruoyi.system.service.iam.port.RolePort;
+import com.ruoyi.system.domain.port.RolePort;
 import org.springframework.stereotype.Component;
 
 @Component

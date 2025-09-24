@@ -1,4 +1,4 @@
-package com.ruoyi.system.service.iam.port;
+package com.ruoyi.system.domain.port;
 
 import com.ruoyi.system.api.domain.SysDept;
 import com.ruoyi.system.api.domain.SysRole;

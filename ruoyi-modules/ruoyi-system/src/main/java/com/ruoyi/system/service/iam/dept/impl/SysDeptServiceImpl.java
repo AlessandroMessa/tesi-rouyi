@@ -6,9 +6,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import com.ruoyi.system.application.adapter.TreeSelectFactory;
-import com.ruoyi.system.service.iam.port.DataScopePort;
-import com.ruoyi.system.service.iam.port.RolePort;
-import com.ruoyi.system.service.iam.port.SecurityPort;
+import com.ruoyi.system.domain.port.DataScopePort;
+import com.ruoyi.system.domain.port.RolePort;
+import com.ruoyi.system.domain.port.SecurityPort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.ruoyi.common.core.constant.UserConstants;
