@@ -1,9 +1,8 @@
-package com.ruoyi.system.security.adapter;
+package com.ruoyi.system.application.adapter;
 
 import com.ruoyi.system.api.domain.SysDept;
 import com.ruoyi.system.api.domain.SysRole;
 import com.ruoyi.system.api.domain.SysUser;
-import com.ruoyi.system.application.adapter.SysDeptAdapter;
 import com.ruoyi.system.domain.iam.dept.Dept;
 import com.ruoyi.system.mapper.dept.SysDeptMapper;
 import com.ruoyi.system.mapper.iam.user.SysRoleMapper;

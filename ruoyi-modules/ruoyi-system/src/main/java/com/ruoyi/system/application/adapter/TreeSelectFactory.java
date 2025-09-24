@@ -3,7 +3,7 @@ package com.ruoyi.system.application.adapter;
 import com.ruoyi.common.core.constant.UserConstants;
 import com.ruoyi.system.domain.iam.dept.Dept;
 import com.ruoyi.system.domain.iam.dept.DeptStatus;
-import com.ruoyi.system.domain.vo.TreeSelect;
+import com.ruoyi.system.domain.iam.dept.TreeSelect;
 
 import java.util.stream.Collectors;
 

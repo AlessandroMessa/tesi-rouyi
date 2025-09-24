@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 import javax.annotation.PostConstruct;
 
-import com.ruoyi.system.directory.DirectoryServiceException;
+import com.ruoyi.system.domain.port.DirectoryServiceException;
 import com.ruoyi.system.directory.port.DictPort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

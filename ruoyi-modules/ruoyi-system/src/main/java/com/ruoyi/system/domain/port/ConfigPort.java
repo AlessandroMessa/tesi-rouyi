@@ -1,4 +1,4 @@
-package com.ruoyi.system.directory.port;
+package com.ruoyi.system.domain.port;
 
 public interface ConfigPort {
     String get(String key);

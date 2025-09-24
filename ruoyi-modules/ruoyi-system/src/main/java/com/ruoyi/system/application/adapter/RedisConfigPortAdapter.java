@@ -1,7 +1,7 @@
-package com.ruoyi.system.directory.adapter.config;
+package com.ruoyi.system.application.adapter;
 
 import com.ruoyi.common.redis.service.RedisService;
-import com.ruoyi.system.directory.port.ConfigPort;
+import com.ruoyi.system.domain.port.ConfigPort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

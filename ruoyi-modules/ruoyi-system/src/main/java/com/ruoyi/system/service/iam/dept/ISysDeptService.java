@@ -2,7 +2,7 @@ package com.ruoyi.system.service.iam.dept;
 
 import java.util.List;
 import com.ruoyi.system.domain.iam.dept.Dept;
-import com.ruoyi.system.domain.vo.TreeSelect;
+import com.ruoyi.system.domain.iam.dept.TreeSelect;
 
 /**
  * 部门管理 服务层 (domain-based)
