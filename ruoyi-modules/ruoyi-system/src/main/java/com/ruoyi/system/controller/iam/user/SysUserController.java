@@ -37,7 +37,7 @@ import com.ruoyi.common.security.utils.SecurityUtils;
 import com.ruoyi.system.api.domain.SysRole;
 import com.ruoyi.system.api.domain.SysUser;
 import com.ruoyi.system.api.model.LoginUser;
-import com.ruoyi.system.service.directory.ISysConfigService;
+import com.ruoyi.system.directory.service.ISysConfigService;
 import com.ruoyi.system.dept.service.ISysDeptService;
 import com.ruoyi.system.service.iam.user.ISysPermissionService;
 import com.ruoyi.system.service.iam.post.ISysPostService;

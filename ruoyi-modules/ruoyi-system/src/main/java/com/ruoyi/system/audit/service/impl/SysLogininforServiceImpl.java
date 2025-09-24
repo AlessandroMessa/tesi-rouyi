@@ -4,7 +4,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.ruoyi.system.api.domain.SysLogininfor;
-import com.ruoyi.system.mapper.audit.SysLogininforMapper;
+import com.ruoyi.system.audit.adapter.SysLogininforMapper;
 import com.ruoyi.system.audit.service.ISysLogininforService;
 
 /**
