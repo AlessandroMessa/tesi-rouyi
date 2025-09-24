@@ -1,6 +1,6 @@
-package com.ruoyi.system.post.service;
+package com.ruoyi.system.iam.user.service;
 
-import com.ruoyi.system.post.domain.SysPost;
+import com.ruoyi.system.iam.user.domain.SysPost;
 
 import java.util.List;
 

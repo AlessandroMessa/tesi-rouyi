@@ -1,10 +1,10 @@
-package com.ruoyi.system.post.service.impl;
+package com.ruoyi.system.iam.user.service.impl;
 
 import java.util.List;
 
-import com.ruoyi.system.post.adapter.SysPostMapper;
-import com.ruoyi.system.post.domain.SysPost;
-import com.ruoyi.system.post.service.ISysPostService;
+import com.ruoyi.system.iam.user.adapter.SysPostMapper;
+import com.ruoyi.system.iam.user.domain.SysPost;
+import com.ruoyi.system.iam.user.service.ISysPostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.ruoyi.common.core.constant.UserConstants;

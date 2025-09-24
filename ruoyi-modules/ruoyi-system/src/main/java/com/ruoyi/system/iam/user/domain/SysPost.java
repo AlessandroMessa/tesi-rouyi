@@ -1,4 +1,4 @@
-package com.ruoyi.system.post.domain;
+package com.ruoyi.system.iam.user.domain;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;

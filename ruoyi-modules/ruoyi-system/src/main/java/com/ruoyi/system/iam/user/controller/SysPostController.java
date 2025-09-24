@@ -1,10 +1,10 @@
-package com.ruoyi.system.post.controller;
+package com.ruoyi.system.iam.user.controller;
 
 import java.util.List;
 import javax.servlet.http.HttpServletResponse;
 
-import com.ruoyi.system.post.domain.SysPost;
-import com.ruoyi.system.post.service.ISysPostService;
+import com.ruoyi.system.iam.user.domain.SysPost;
+import com.ruoyi.system.iam.user.service.ISysPostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;

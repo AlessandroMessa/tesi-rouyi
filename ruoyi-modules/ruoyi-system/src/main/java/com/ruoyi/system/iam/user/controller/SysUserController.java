@@ -40,7 +40,7 @@ import com.ruoyi.system.api.model.LoginUser;
 import com.ruoyi.system.directory.service.ISysConfigService;
 import com.ruoyi.system.dept.service.ISysDeptService;
 import com.ruoyi.system.iam.role.service.ISysPermissionService;
-import com.ruoyi.system.post.service.ISysPostService;
+import com.ruoyi.system.iam.user.service.ISysPostService;
 import com.ruoyi.system.iam.role.service.ISysRoleService;
 import com.ruoyi.system.iam.user.service.ISysUserService;
 
