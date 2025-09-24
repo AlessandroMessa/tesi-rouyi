@@ -1,8 +1,8 @@
 package com.ruoyi.system.domain.port;
 
-import com.ruoyi.system.api.domain.SysDept;
 import com.ruoyi.system.api.domain.SysRole;
 import com.ruoyi.system.api.domain.SysUser;
+import com.ruoyi.system.domain.model.Dept;
 
 import java.util.List;
 
@@ -11,5 +11,5 @@ public interface DataScopePort {
     List<SysUser> selectUserListWithScope(SysUser user);
     List<SysUser> selectAllocatedListWithScope(SysUser user);
     List<SysUser> selectUnallocatedListWithScope(SysUser user);
-    List<SysDept> selectDeptListWithScope(SysDept dept);
+    List<Dept> selectDeptListWithScope(Dept dept);
 }

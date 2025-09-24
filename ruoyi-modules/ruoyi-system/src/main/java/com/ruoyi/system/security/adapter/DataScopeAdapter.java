@@ -3,6 +3,8 @@ package com.ruoyi.system.security.adapter;
 import com.ruoyi.system.api.domain.SysDept;
 import com.ruoyi.system.api.domain.SysRole;
 import com.ruoyi.system.api.domain.SysUser;
+import com.ruoyi.system.application.adapter.SysDeptAdapter;
+import com.ruoyi.system.domain.model.Dept;
 import com.ruoyi.system.mapper.SysDeptMapper;
 import com.ruoyi.system.mapper.SysRoleMapper;
 import com.ruoyi.system.mapper.SysUserMapper;
@@ -11,6 +13,7 @@ import com.ruoyi.common.datascope.annotation.DataScope;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Component
 public class DataScopeAdapter implements DataScopePort {
@@ -49,7 +52,11 @@ public class DataScopeAdapter implements DataScopePort {
     }
     @Override
     @DataScope(deptAlias = "d")
-    public List<SysDept> selectDeptListWithScope(SysDept dept){
-        return deptMapper.selectDeptList(dept);
+    public List<Dept> selectDeptListWithScope(Dept filter) {
+        SysDept dto = SysDeptAdapter.toSysDept(filter);
+        List<SysDept> rows = deptMapper.selectDeptList(dto);
+        return rows.stream()
+                .map(SysDeptAdapter::toDomain)
+                .collect(Collectors.toList());
     }
 }

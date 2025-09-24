@@ -1,7 +1,7 @@
 package com.ruoyi.system.security.adapter;
 
 import com.ruoyi.common.security.utils.SecurityUtils;
-import com.ruoyi.system.security.port.SecurityPort;
+import com.ruoyi.system.domain.port.SecurityPort;
 import org.springframework.stereotype.Component;
 
 @Component
