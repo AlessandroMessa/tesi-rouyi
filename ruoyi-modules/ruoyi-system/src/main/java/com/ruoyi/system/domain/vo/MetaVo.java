@@ -1,7 +1,5 @@
 package com.ruoyi.system.domain.vo;
 
-import com.ruoyi.common.core.utils.StringUtils;
-
 /**
  * 路由显示信息
  * 
@@ -58,7 +56,7 @@ public class MetaVo
         this.title = title;
         this.icon = icon;
         this.noCache = noCache;
-        if (StringUtils.ishttp(link))
+        if (isHttp(link))
         {
             this.link = link;
         }
@@ -103,4 +101,10 @@ public class MetaVo
     {
         this.link = link;
     }
+    public static boolean isHttp(String link) {
+        return link != null
+                && (link.regionMatches(true, 0, "http://", 0, 7)
+                || link.regionMatches(true, 0, "https://", 0, 8));
+    }
+
 }
