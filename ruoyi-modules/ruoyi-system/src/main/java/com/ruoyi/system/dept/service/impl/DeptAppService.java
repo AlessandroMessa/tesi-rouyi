@@ -1,17 +1,17 @@
-package com.ruoyi.system.service.iam.dept.impl;
+package com.ruoyi.system.dept.service.impl;
 
 import com.ruoyi.common.core.constant.UserConstants;
 import com.ruoyi.common.core.exception.ServiceException;
 import com.ruoyi.common.core.utils.StringUtils;
-import com.ruoyi.system.application.adapter.TreeSelectFactory;
-import com.ruoyi.system.domain.iam.dept.Dept;
-import com.ruoyi.system.domain.iam.dept.DeptStatus;
-import com.ruoyi.system.domain.port.DataScopePort;
-import com.ruoyi.system.domain.port.DeptRepository;
+import com.ruoyi.system.dept.factory.TreeSelectFactory;
+import com.ruoyi.system.dept.domain.model.Dept;
+import com.ruoyi.system.dept.domain.model.DeptStatus;
+import com.ruoyi.system.dept.domain.port.DataScopePort;
+import com.ruoyi.system.dept.domain.port.DeptRepository;
 import com.ruoyi.system.domain.port.RolePort;
 import com.ruoyi.system.domain.port.SecurityPort;
-import com.ruoyi.system.domain.iam.dept.TreeSelect;
-import com.ruoyi.system.service.iam.dept.ISysDeptService;
+import com.ruoyi.system.dept.domain.model.TreeSelect;
+import com.ruoyi.system.dept.service.ISysDeptService;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

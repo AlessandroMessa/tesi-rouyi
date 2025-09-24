@@ -1,9 +1,9 @@
-package com.ruoyi.system.controller.iam.dept;
+package com.ruoyi.system.dept.controller;
 
 import java.util.List;
 
-import com.ruoyi.system.domain.iam.dept.Dept;
-import com.ruoyi.system.domain.iam.dept.DeptStatus;
+import com.ruoyi.system.dept.domain.model.Dept;
+import com.ruoyi.system.dept.domain.model.DeptStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -19,7 +19,7 @@ import com.ruoyi.common.core.web.domain.AjaxResult;
 import com.ruoyi.common.log.annotation.Log;
 import com.ruoyi.common.log.enums.BusinessType;
 import com.ruoyi.common.security.annotation.RequiresPermissions;
-import com.ruoyi.system.service.iam.dept.ISysDeptService;
+import com.ruoyi.system.dept.service.ISysDeptService;
 
 /**
  * 部门信息

@@ -3,7 +3,7 @@ package com.ruoyi.system.controller.iam.user;
 import java.util.List;
 import javax.servlet.http.HttpServletResponse;
 
-import com.ruoyi.system.domain.iam.dept.Dept;
+import com.ruoyi.system.dept.domain.model.Dept;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -25,7 +25,7 @@ import com.ruoyi.common.security.utils.SecurityUtils;
 import com.ruoyi.system.api.domain.SysRole;
 import com.ruoyi.system.api.domain.SysUser;
 import com.ruoyi.system.domain.iam.user.SysUserRole;
-import com.ruoyi.system.service.iam.dept.ISysDeptService;
+import com.ruoyi.system.dept.service.ISysDeptService;
 import com.ruoyi.system.service.iam.user.ISysRoleService;
 import com.ruoyi.system.service.iam.user.ISysUserService;
 

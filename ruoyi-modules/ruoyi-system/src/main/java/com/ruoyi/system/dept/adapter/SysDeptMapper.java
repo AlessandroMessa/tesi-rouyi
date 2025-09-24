@@ -1,4 +1,4 @@
-package com.ruoyi.system.mapper.dept;
+package com.ruoyi.system.dept.adapter;
 
 import java.util.List;
 import org.apache.ibatis.annotations.Param;

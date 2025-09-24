@@ -1,8 +1,8 @@
-package com.ruoyi.system.domain.port;
+package com.ruoyi.system.dept.domain.port;
 
 import com.ruoyi.system.api.domain.SysRole;
 import com.ruoyi.system.api.domain.SysUser;
-import com.ruoyi.system.domain.iam.dept.Dept;
+import com.ruoyi.system.dept.domain.model.Dept;
 
 import java.util.List;
 

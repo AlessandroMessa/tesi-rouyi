@@ -6,7 +6,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import com.ruoyi.system.domain.port.DataScopePort;
+import com.ruoyi.system.dept.domain.port.DataScopePort;
 import com.ruoyi.system.domain.port.SecurityPort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

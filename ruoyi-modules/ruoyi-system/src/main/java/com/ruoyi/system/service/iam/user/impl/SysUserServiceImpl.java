@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import javax.validation.Validator;
 
-import com.ruoyi.system.domain.port.DataScopePort;
+import com.ruoyi.system.dept.domain.port.DataScopePort;
 import com.ruoyi.system.domain.port.SecurityPort;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,7 +29,7 @@ import com.ruoyi.system.mapper.iam.user.SysUserMapper;
 import com.ruoyi.system.mapper.iam.user.SysUserPostMapper;
 import com.ruoyi.system.mapper.iam.user.SysUserRoleMapper;
 import com.ruoyi.system.service.directory.ISysConfigService;
-import com.ruoyi.system.service.iam.dept.ISysDeptService;
+import com.ruoyi.system.dept.service.ISysDeptService;
 import com.ruoyi.system.service.iam.user.ISysUserService;
 
 /**

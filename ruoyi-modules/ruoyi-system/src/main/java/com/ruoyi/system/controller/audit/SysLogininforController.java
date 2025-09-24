@@ -21,7 +21,7 @@ import com.ruoyi.common.redis.service.RedisService;
 import com.ruoyi.common.security.annotation.InnerAuth;
 import com.ruoyi.common.security.annotation.RequiresPermissions;
 import com.ruoyi.system.api.domain.SysLogininfor;
-import com.ruoyi.system.service.audit.ISysLogininforService;
+import com.ruoyi.system.audit.service.ISysLogininforService;
 
 /**
  * 系统访问记录

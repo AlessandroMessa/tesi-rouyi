@@ -1,11 +1,11 @@
-package com.ruoyi.system.service.audit.impl;
+package com.ruoyi.system.audit.service.impl;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.ruoyi.system.api.domain.SysLogininfor;
 import com.ruoyi.system.mapper.audit.SysLogininforMapper;
-import com.ruoyi.system.service.audit.ISysLogininforService;
+import com.ruoyi.system.audit.service.ISysLogininforService;
 
 /**
  * 系统访问日志情况信息 服务层处理

@@ -7,7 +7,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import javax.servlet.http.HttpServletResponse;
 
-import com.ruoyi.system.domain.iam.dept.Dept;
+import com.ruoyi.system.dept.domain.model.Dept;
 import org.apache.commons.lang3.ArrayUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
@@ -38,7 +38,7 @@ import com.ruoyi.system.api.domain.SysRole;
 import com.ruoyi.system.api.domain.SysUser;
 import com.ruoyi.system.api.model.LoginUser;
 import com.ruoyi.system.service.directory.ISysConfigService;
-import com.ruoyi.system.service.iam.dept.ISysDeptService;
+import com.ruoyi.system.dept.service.ISysDeptService;
 import com.ruoyi.system.service.iam.user.ISysPermissionService;
 import com.ruoyi.system.service.iam.post.ISysPostService;
 import com.ruoyi.system.service.iam.user.ISysRoleService;

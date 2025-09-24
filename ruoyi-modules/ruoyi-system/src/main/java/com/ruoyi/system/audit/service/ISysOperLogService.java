@@ -1,4 +1,4 @@
-package com.ruoyi.system.service.audit;
+package com.ruoyi.system.audit.service;
 
 import java.util.List;
 import com.ruoyi.system.api.domain.SysOperLog;

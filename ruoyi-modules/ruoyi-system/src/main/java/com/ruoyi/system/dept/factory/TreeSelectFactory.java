@@ -1,9 +1,9 @@
-package com.ruoyi.system.application.adapter;
+package com.ruoyi.system.dept.factory;
 
 import com.ruoyi.common.core.constant.UserConstants;
-import com.ruoyi.system.domain.iam.dept.Dept;
-import com.ruoyi.system.domain.iam.dept.DeptStatus;
-import com.ruoyi.system.domain.iam.dept.TreeSelect;
+import com.ruoyi.system.dept.domain.model.Dept;
+import com.ruoyi.system.dept.domain.model.DeptStatus;
+import com.ruoyi.system.dept.domain.model.TreeSelect;
 
 import java.util.stream.Collectors;
 

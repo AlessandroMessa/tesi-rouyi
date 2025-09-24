@@ -1,6 +1,6 @@
-package com.ruoyi.system.domain.port;
+package com.ruoyi.system.dept.domain.port;
 
-import com.ruoyi.system.domain.iam.dept.Dept;
+import com.ruoyi.system.dept.domain.model.Dept;
 import java.util.List;
 import java.util.Optional;
 

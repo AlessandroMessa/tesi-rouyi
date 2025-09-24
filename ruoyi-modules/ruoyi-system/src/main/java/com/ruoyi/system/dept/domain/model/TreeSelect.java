@@ -1,4 +1,4 @@
-package com.ruoyi.system.domain.iam.dept;
+package com.ruoyi.system.dept.domain.model;
 
 import java.io.Serializable;
 import java.util.List;

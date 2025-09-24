@@ -1,4 +1,4 @@
-package com.ruoyi.system.domain.iam.dept;
+package com.ruoyi.system.dept.domain.model;
 
 import java.util.ArrayList;
 import java.util.Collections;
