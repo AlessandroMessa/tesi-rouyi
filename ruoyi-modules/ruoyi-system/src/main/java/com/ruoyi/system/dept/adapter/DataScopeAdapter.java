@@ -5,7 +5,7 @@ import com.ruoyi.system.api.domain.SysRole;
 import com.ruoyi.system.api.domain.SysUser;
 import com.ruoyi.system.dept.domain.model.Dept;
 import com.ruoyi.system.mapper.iam.user.SysRoleMapper;
-import com.ruoyi.system.mapper.iam.user.SysUserMapper;
+import com.ruoyi.system.iam.user.adapter.SysUserMapper;
 import com.ruoyi.system.dept.domain.port.DataScopePort;
 import com.ruoyi.common.datascope.annotation.DataScope;
 import org.springframework.stereotype.Component;

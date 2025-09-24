@@ -1,4 +1,4 @@
-package com.ruoyi.system.controller.iam.user;
+package com.ruoyi.system.iam.user.controller;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -21,7 +21,7 @@ import com.ruoyi.common.redis.service.RedisService;
 import com.ruoyi.common.security.annotation.RequiresPermissions;
 import com.ruoyi.system.api.model.LoginUser;
 import com.ruoyi.system.domain.iam.user.SysUserOnline;
-import com.ruoyi.system.service.iam.user.ISysUserOnlineService;
+import com.ruoyi.system.iam.user.service.ISysUserOnlineService;
 
 /**
  * 在线用户监控

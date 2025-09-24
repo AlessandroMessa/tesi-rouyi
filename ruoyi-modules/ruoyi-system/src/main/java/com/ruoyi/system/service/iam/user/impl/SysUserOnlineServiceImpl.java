@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 import com.ruoyi.common.core.utils.StringUtils;
 import com.ruoyi.system.api.model.LoginUser;
 import com.ruoyi.system.domain.iam.user.SysUserOnline;
-import com.ruoyi.system.service.iam.user.ISysUserOnlineService;
+import com.ruoyi.system.iam.user.service.ISysUserOnlineService;
 
 /**
  * 在线用户 服务层处理

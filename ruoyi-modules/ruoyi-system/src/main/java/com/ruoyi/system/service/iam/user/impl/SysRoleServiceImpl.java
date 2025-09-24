@@ -22,7 +22,7 @@ import com.ruoyi.system.domain.iam.user.SysUserRole;
 import com.ruoyi.system.mapper.iam.user.SysRoleDeptMapper;
 import com.ruoyi.system.mapper.iam.user.SysRoleMapper;
 import com.ruoyi.system.mapper.iam.user.SysRoleMenuMapper;
-import com.ruoyi.system.mapper.iam.user.SysUserRoleMapper;
+import com.ruoyi.system.iam.user.adapter.SysUserRoleMapper;
 import com.ruoyi.system.service.iam.user.ISysRoleService;
 
 /**

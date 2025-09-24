@@ -1,4 +1,4 @@
-package com.ruoyi.system.controller.iam.user;
+package com.ruoyi.system.iam.user.controller;
 
 import java.util.Arrays;
 import java.util.Map;
@@ -26,7 +26,7 @@ import com.ruoyi.system.api.RemoteFileService;
 import com.ruoyi.system.api.domain.SysFile;
 import com.ruoyi.system.api.domain.SysUser;
 import com.ruoyi.system.api.model.LoginUser;
-import com.ruoyi.system.service.iam.user.ISysUserService;
+import com.ruoyi.system.iam.user.service.ISysUserService;
 
 /**
  * 个人信息 业务处理

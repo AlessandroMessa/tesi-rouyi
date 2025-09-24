@@ -1,4 +1,4 @@
-package com.ruoyi.system.service.iam.user;
+package com.ruoyi.system.iam.user.service;
 
 import java.util.List;
 import com.ruoyi.system.api.domain.SysUser;

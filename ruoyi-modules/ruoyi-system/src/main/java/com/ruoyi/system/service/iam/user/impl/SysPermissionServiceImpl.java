@@ -10,7 +10,7 @@ import com.ruoyi.common.core.constant.UserConstants;
 import com.ruoyi.common.core.utils.StringUtils;
 import com.ruoyi.system.api.domain.SysRole;
 import com.ruoyi.system.api.domain.SysUser;
-import com.ruoyi.system.service.iam.menu.ISysMenuService;
+import com.ruoyi.system.iam.user.service.ISysMenuService;
 import com.ruoyi.system.service.iam.user.ISysPermissionService;
 import com.ruoyi.system.service.iam.user.ISysRoleService;
 

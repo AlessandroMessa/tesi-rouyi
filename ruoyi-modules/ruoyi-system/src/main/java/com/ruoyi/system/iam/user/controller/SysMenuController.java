@@ -1,4 +1,4 @@
-package com.ruoyi.system.controller.iam.menu;
+package com.ruoyi.system.iam.user.controller;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +20,7 @@ import com.ruoyi.common.log.enums.BusinessType;
 import com.ruoyi.common.security.annotation.RequiresPermissions;
 import com.ruoyi.common.security.utils.SecurityUtils;
 import com.ruoyi.system.domain.iam.menu.SysMenu;
-import com.ruoyi.system.service.iam.menu.ISysMenuService;
+import com.ruoyi.system.iam.user.service.ISysMenuService;
 
 /**
  * 菜单信息

@@ -25,12 +25,12 @@ import com.ruoyi.system.domain.iam.user.SysUserPost;
 import com.ruoyi.system.domain.iam.user.SysUserRole;
 import com.ruoyi.system.mapper.iam.post.SysPostMapper;
 import com.ruoyi.system.mapper.iam.user.SysRoleMapper;
-import com.ruoyi.system.mapper.iam.user.SysUserMapper;
-import com.ruoyi.system.mapper.iam.user.SysUserPostMapper;
-import com.ruoyi.system.mapper.iam.user.SysUserRoleMapper;
+import com.ruoyi.system.iam.user.adapter.SysUserMapper;
+import com.ruoyi.system.iam.user.adapter.SysUserPostMapper;
+import com.ruoyi.system.iam.user.adapter.SysUserRoleMapper;
 import com.ruoyi.system.directory.service.ISysConfigService;
 import com.ruoyi.system.dept.service.ISysDeptService;
-import com.ruoyi.system.service.iam.user.ISysUserService;
+import com.ruoyi.system.iam.user.service.ISysUserService;
 
 /**
  * 用户 业务层处理

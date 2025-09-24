@@ -1,4 +1,4 @@
-package com.ruoyi.system.mapper.iam.user;
+package com.ruoyi.system.iam.user.adapter;
 
 import java.util.List;
 import org.apache.ibatis.annotations.Param;

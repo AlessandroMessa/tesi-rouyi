@@ -1,4 +1,4 @@
-package com.ruoyi.system.controller.iam.user;
+package com.ruoyi.system.iam.user.controller;
 
 import java.io.IOException;
 import java.util.Date;
@@ -42,7 +42,7 @@ import com.ruoyi.system.dept.service.ISysDeptService;
 import com.ruoyi.system.service.iam.user.ISysPermissionService;
 import com.ruoyi.system.service.iam.post.ISysPostService;
 import com.ruoyi.system.service.iam.user.ISysRoleService;
-import com.ruoyi.system.service.iam.user.ISysUserService;
+import com.ruoyi.system.iam.user.service.ISysUserService;
 
 /**
  * 用户信息
