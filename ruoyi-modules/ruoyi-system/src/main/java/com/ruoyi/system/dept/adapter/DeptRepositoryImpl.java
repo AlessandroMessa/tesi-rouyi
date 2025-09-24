@@ -3,7 +3,7 @@ package com.ruoyi.system.dept.adapter;
 import com.ruoyi.system.api.domain.SysDept;
 import com.ruoyi.system.dept.domain.model.Dept;
 import com.ruoyi.system.dept.domain.port.DeptRepository;
-import com.ruoyi.system.domain.port.SecurityPort;
+import com.ruoyi.system.common.SecurityPort;
 import com.ruoyi.common.security.utils.SecurityUtils;
 import org.springframework.stereotype.Component;
 

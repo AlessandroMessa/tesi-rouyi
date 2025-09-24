@@ -2,7 +2,7 @@ package com.ruoyi.system.iam.user.adapter;
 
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
-import com.ruoyi.system.domain.iam.user.SysUserRole;
+import com.ruoyi.system.iam.user.domain.SysUserRole;
 
 /**
  * 用户与角色关联表 数据层

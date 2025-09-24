@@ -20,7 +20,7 @@ import com.ruoyi.common.log.enums.BusinessType;
 import com.ruoyi.common.redis.service.RedisService;
 import com.ruoyi.common.security.annotation.RequiresPermissions;
 import com.ruoyi.system.api.model.LoginUser;
-import com.ruoyi.system.domain.iam.user.SysUserOnline;
+import com.ruoyi.system.iam.user.domain.SysUserOnline;
 import com.ruoyi.system.iam.user.service.ISysUserOnlineService;
 
 /**
