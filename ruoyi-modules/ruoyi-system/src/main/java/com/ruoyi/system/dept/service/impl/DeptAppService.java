@@ -9,7 +9,7 @@ import com.ruoyi.system.dept.domain.model.DeptStatus;
 import com.ruoyi.system.dept.domain.port.DataScopePort;
 import com.ruoyi.system.dept.domain.port.DeptRepository;
 import com.ruoyi.system.iam.role.domain.port.RolePort;
-import com.ruoyi.system.common.SecurityPort;
+import com.ruoyi.system.shared.vo.SecurityPort;
 import com.ruoyi.system.dept.service.ISysDeptService;
 import com.ruoyi.system.shared.vo.TreeSelect;
 import org.springframework.stereotype.Service;

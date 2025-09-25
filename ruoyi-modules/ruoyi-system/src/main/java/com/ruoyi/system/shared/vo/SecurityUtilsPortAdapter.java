@@ -1,4 +1,4 @@
-package com.ruoyi.system.common;
+package com.ruoyi.system.shared.vo;
 
 import com.ruoyi.common.security.utils.SecurityUtils;
 import org.springframework.stereotype.Component;

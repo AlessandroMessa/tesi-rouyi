@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import com.ruoyi.system.common.SecurityPort;
+import com.ruoyi.system.shared.vo.SecurityPort;
 import com.ruoyi.system.iam.role.factory.MenuTreeSelectFactory;
 import com.ruoyi.system.shared.vo.TreeSelect;
 import org.springframework.beans.factory.annotation.Autowired;

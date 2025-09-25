@@ -1,11 +1,11 @@
 package com.ruoyi.system.directory.domain.port;
 
 import java.util.List;
-import com.ruoyi.system.api.domain.SysDictData;
+import com.ruoyi.system.directory.domain.model.DictData;
 
 public interface DictPort {
-    List<SysDictData> get(String dictType);
-    void set(String dictType, List<SysDictData> values);
+    List<DictData> get(String dictType);
+    void set(String dictType, List<DictData> values);
     void remove(String dictType);
     void clearAll();
 }

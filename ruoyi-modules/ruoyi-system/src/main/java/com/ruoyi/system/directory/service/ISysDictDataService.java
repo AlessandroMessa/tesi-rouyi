@@ -1,7 +1,9 @@
 package com.ruoyi.system.directory.service;
 
+import com.ruoyi.system.directory.domain.model.DictData;
+
 import java.util.List;
-import com.ruoyi.system.api.domain.SysDictData;
+
 
 /**
  * 字典 业务层
@@ -16,7 +18,7 @@ public interface ISysDictDataService
      * @param dictData 字典数据信息
      * @return 字典数据集合信息
      */
-    public List<SysDictData> selectDictDataList(SysDictData dictData);
+    public List<DictData> selectDictDataList(DictData dictData);
 
     /**
      * 根据字典类型和字典键值查询字典数据信息
@@ -33,7 +35,7 @@ public interface ISysDictDataService
      * @param dictCode 字典数据ID
      * @return 字典数据
      */
-    public SysDictData selectDictDataById(Long dictCode);
+    public DictData selectDictDataById(Long dictCode);
 
     /**
      * 批量删除字典数据信息
@@ -48,7 +50,7 @@ public interface ISysDictDataService
      * @param dictData 字典数据信息
      * @return 结果
      */
-    public int insertDictData(SysDictData dictData);
+    public int insertDictData(DictData dictData);
 
     /**
      * 修改保存字典数据信息
@@ -56,5 +58,5 @@ public interface ISysDictDataService
      * @param dictData 字典数据信息
      * @return 结果
      */
-    public int updateDictData(SysDictData dictData);
+    public int updateDictData(DictData dictData);
 }

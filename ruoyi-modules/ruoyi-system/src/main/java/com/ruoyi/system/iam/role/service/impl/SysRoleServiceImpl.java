@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Set;
 
 import com.ruoyi.system.dept.domain.port.DataScopePort;
-import com.ruoyi.system.common.SecurityPort;
+import com.ruoyi.system.shared.vo.SecurityPort;
 import com.ruoyi.system.iam.role.service.ISysRoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

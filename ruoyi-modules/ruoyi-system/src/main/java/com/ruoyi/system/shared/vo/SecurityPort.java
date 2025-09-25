@@ -1,4 +1,4 @@
-package com.ruoyi.system.common;
+package com.ruoyi.system.shared.vo;
 
 public interface  SecurityPort {
 
