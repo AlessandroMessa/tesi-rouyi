@@ -28,7 +28,7 @@ import com.ruoyi.system.iam.adapter.SysRoleMapper;
 import com.ruoyi.system.iam.adapter.SysUserMapper;
 import com.ruoyi.system.iam.adapter.SysUserPostMapper;
 import com.ruoyi.system.iam.adapter.SysUserRoleMapper;
-import com.ruoyi.system.directory.service.ISysConfigService;
+import com.ruoyi.system.iam.service.ISysConfigService;
 import com.ruoyi.system.iam.service.ISysDeptService;
 import com.ruoyi.system.iam.service.ISysUserService;
 

@@ -1,4 +1,4 @@
-package com.ruoyi.system.directory.controller;
+package com.ruoyi.system.iam.controller;
 
 import java.util.List;
 import javax.servlet.http.HttpServletResponse;
@@ -20,8 +20,8 @@ import com.ruoyi.common.log.annotation.Log;
 import com.ruoyi.common.log.enums.BusinessType;
 import com.ruoyi.common.security.annotation.RequiresPermissions;
 import com.ruoyi.common.security.utils.SecurityUtils;
-import com.ruoyi.system.directory.domain.model.SysConfig;
-import com.ruoyi.system.directory.service.ISysConfigService;
+import com.ruoyi.system.iam.domain.SysConfig;
+import com.ruoyi.system.iam.service.ISysConfigService;
 
 /**
  * 参数配置 信息操作处理

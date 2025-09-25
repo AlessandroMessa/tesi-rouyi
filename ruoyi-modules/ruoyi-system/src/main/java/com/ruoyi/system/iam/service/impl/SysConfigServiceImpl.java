@@ -1,9 +1,9 @@
-package com.ruoyi.system.directory.service.impl;
+package com.ruoyi.system.iam.service.impl;
 
 import java.util.List;
 import javax.annotation.PostConstruct;
 
-import com.ruoyi.system.directory.domain.port.ConfigPort;
+import com.ruoyi.system.iam.domain.port.ConfigPort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.ruoyi.common.core.constant.CacheConstants;
@@ -11,9 +11,9 @@ import com.ruoyi.common.core.constant.UserConstants;
 import com.ruoyi.common.core.exception.ServiceException;
 import com.ruoyi.common.core.text.Convert;
 import com.ruoyi.common.core.utils.StringUtils;
-import com.ruoyi.system.directory.domain.model.SysConfig;
-import com.ruoyi.system.directory.adapter.SysConfigMapper;
-import com.ruoyi.system.directory.service.ISysConfigService;
+import com.ruoyi.system.iam.domain.SysConfig;
+import com.ruoyi.system.iam.adapter.SysConfigMapper;
+import com.ruoyi.system.iam.service.ISysConfigService;
 
 /**
  * 参数配置 服务层实现

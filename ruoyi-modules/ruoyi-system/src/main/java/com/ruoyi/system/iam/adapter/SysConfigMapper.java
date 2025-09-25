@@ -1,7 +1,7 @@
-package com.ruoyi.system.directory.adapter;
+package com.ruoyi.system.iam.adapter;
 
 import java.util.List;
-import com.ruoyi.system.directory.domain.model.SysConfig;
+import com.ruoyi.system.iam.domain.SysConfig;
 
 /**
  * 参数配置 数据层

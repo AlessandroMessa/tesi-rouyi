@@ -1,7 +1,7 @@
-package com.ruoyi.system.directory.service;
+package com.ruoyi.system.iam.service;
 
 import java.util.List;
-import com.ruoyi.system.directory.domain.model.SysConfig;
+import com.ruoyi.system.iam.domain.SysConfig;
 
 /**
  * 参数配置 服务层
